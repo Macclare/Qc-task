@@ -23,7 +23,7 @@ mongoose.connect(process.env.DATABASE_URL!, ()=>{
 
 app.use('/users', userRouter)
 
-const Port = 3000;
+const Port = process.env.PORT || 3000
 app.listen(Port, () => {
     console.log(`Server is running on port ${Port}`);
     }
