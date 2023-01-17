@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "license": "MIT",
   "scripts": {
-    "start": "tsc && nodemon src/app.ts",
+    "start": "tsc && nodemon dist/app.js",
     "compile": "rm -rf dist && tsc -w"
   },
   "devDependencies": {
