@@ -20,6 +20,7 @@ app.use(express.static(path.join(process.cwd(),'./public')))
 
 require('dotenv').config({ path: path.resolve(__dirname, './.env') });
 
+mongoose.set('strictQuery',false);
 mongoose.connect(process.env.DATABASE_URL!, ()=>{
     console.log("Database connected successfully")
 })
